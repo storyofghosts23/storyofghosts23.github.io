@@ -18,8 +18,7 @@
     <section id="hero">
         <div class="animate__animated animate__bounceIn" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
             <h1>Hola, te pido perdón</h1>
-            <h1>pero sabes que me quedó increible el sticker <div id="arrow-container">
-                <div id="arrow"></div>
+            <h1>ya sabes q soy un payasote <div id="arrow-container">
             </div></h1>
             <img class="" src="/soonri.png" alt="" style="width: 100px;">
             
@@ -30,7 +29,7 @@
             <button onclick="trost()" id="sendEmailBtn">Nunca</button>
         </div>
     </div>
-    <img id="dvd-logo" src="brawl.png" alt="">
+
 </section>
 <div class="hide" id="back"></div>
 <div class="no hide">
@@ -51,27 +50,6 @@
     const arrow = document.getElementById('arrow');
     const container = document.getElementById('arrow-container');
     
-    function updateArrow() {
-        // Obtener posición del logo
-        const rect = logo.getBoundingClientRect();
-        const logoX = rect.left + rect.width/2;
-        const logoY = rect.top + rect.height/2;
-        
-        // Obtener posición del contenedor de la flecha
-        const containerRect = container.getBoundingClientRect();
-        const containerX = containerRect.left + containerRect.width/2;
-        const containerY = containerRect.top + containerRect.height/2;
-        
-        // Calcular ángulo para apuntar al logo
-        const angle = Math.atan2(logoY - containerY, logoX - containerX) * 180 / Math.PI;
-        
-        // Rotar la flecha
-        arrow.style.transform = `rotate(${angle}deg)`;
-        
-        requestAnimationFrame(updateArrow);
-    }
-    
-    // Iniciar la animación
-    updateArrow();
+   
 </script>
 
